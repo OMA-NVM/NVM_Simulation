@@ -12,6 +12,50 @@
         "kind": "build",
         "isDefault": false
       }
-    }
+    },
+    {
+      "label": "Run skip-Steps1and2.sh",
+      "detail": "downloads our prebuild disk image file",
+      "type": "shell",
+      "command": "./cdnc/skip-Steps1and2.sh",
+      "problemMatcher": [],
+      "group": {
+        "kind": "none",
+        "isDefault": false
+      }
+    },
+    {
+      "label": "Run step1-InstallingUbuntu.sh",
+      "detail": "Install Ubuntu Server on empty disk image with QEMU",
+      "type": "shell",
+      "command": "./cdnc/step1-InstallingUbuntu.sh",
+      "problemMatcher": [],
+      "group": {
+        "kind": "none",
+        "isDefault": false
+      }
+    },
+    {
+      "label": "Run step2-PostInstallation.sh",
+      "detail": "Copy necessary files to your custom disk image",
+      "type": "shell",
+      "command": "./cdnc/step2-PostInstallation.sh",
+      "problemMatcher": [],
+      "group": {
+        "kind": "none",
+        "isDefault": false
+      }
+    },
+    {
+      "label": "Run step3-testingWithGem5.sh",
+      "detail": "Run gem5 with your custom disk in FS mode",
+      "type": "shell",
+      "command": "./cdnc/step3-testingWithGem5.sh",
+      "problemMatcher": [],
+      "group": {
+        "kind": "none",
+        "isDefault": false
+      }
+    },
   ]
 }

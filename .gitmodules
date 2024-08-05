@@ -14,3 +14,7 @@
 	path = simulator/nvmain
 	url = git@github.com:OMA-NVM/nv-NVmain.git
 	branch = master
+[submodule "CDNC"]
+	path = cdnc
+	url = git@github.com:OMA-NVM/gem5cimFStutorial.git
+	branch = DevC

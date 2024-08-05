@@ -2,6 +2,7 @@
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.241.1/containers/ubuntu
 {
 	"name": "Ubuntu",
+	"initializeCommand": "git submodule init && git submodule update --remote --init",
 	"build": {
 		"dockerfile": "Dockerfile",
 		// Update 'VARIANT' to pick an Ubuntu version: jammy / ubuntu-22.04, focal / ubuntu-20.04, bionic /ubuntu-18.04
@@ -10,8 +11,13 @@
 			"VARIANT": "ubuntu-22.04"
 		}
 	},
+	"mounts": [
+		"source=/dev/kvm,target=/dev/kvm,type=bind"
+	],
 	"runArgs": [
-		"--network=host"
+		"--network=host",
+		"--cap-add=IPC_LOCK",
+		"--device=/dev/kvm"
 	],
 	"customizations": {
 		"vscode": {

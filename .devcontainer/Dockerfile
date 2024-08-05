@@ -37,3 +37,18 @@ RUN cd / ; curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
 # Set environment variables
 
 RUN echo "set completion-ignore-case on" >> /etc/inputrc
+
+
+# Install QEMU-KVM dependencies
+RUN apt update && \
+    apt install -y \
+    qemu-kvm \
+    libvirt-daemon-system libvirt-clients bridge-utils virt-manager 
+
+# Install QEMU-SYSTEM dependencies
+RUN apt update && \
+    apt install -y \
+    qemu-system \ 
+    libcanberra-gtk-module libcanberra-gtk3-module
+
+RUN apt clean
