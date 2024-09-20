@@ -9,7 +9,7 @@
 [submodule "Gem5"]
 	path = simulator/gem5
 	url = git@github.com:OMA-NVM/nv-gem5.git
-	branch = stable
+	branch = CDNCcimFS
 [submodule "NVMain"]
 	path = simulator/nvmain
 	url = git@github.com:OMA-NVM/nv-NVmain.git
@@ -17,4 +17,4 @@
 [submodule "CDNC"]
 	path = cdnc
 	url = git@github.com:OMA-NVM/gem5cimFStutorial.git
-	branch = DevC
+	branch = ESweek
