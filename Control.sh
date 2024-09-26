@@ -36,7 +36,7 @@ compile() {
 }
 
 run() {
-    ./NVMBench e helloworld
+    ./NVMBench.sh e helloworld
 }
 
 case $1 in
