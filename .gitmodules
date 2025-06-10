@@ -13,4 +13,4 @@
 [submodule "NVMain"]
 	path = simulator/nvmain
 	url = https://github.com/OMA-NVM/nv-NVmain.git
-	branch = master
+	branch = tudr-nvmain
