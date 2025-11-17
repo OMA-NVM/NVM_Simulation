@@ -38,6 +38,7 @@ Currently the following features are supported:
 bitflip: Bit-Flip Trace Writer  
 CDNCcim: Compute in Memory module for NVM technologies
 hybrid_cache: Heterogeneous cache extension
+mem_subsystem: Overview of memory subsystem, hybrid memory, and in-memory operations
 
 ### TL;DR:
 #### Setup

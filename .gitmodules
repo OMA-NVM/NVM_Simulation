@@ -9,7 +9,7 @@
 [submodule "Gem5"]
 	path = simulator/gem5
 	url = https://github.com/OMA-NVM/nv-gem5.git
-	branch = tudr-gem5
+	branch = tudr-gem5 
 [submodule "NVMain"]
 	path = simulator/nvmain
 	url = https://github.com/OMA-NVM/nv-NVmain.git
